@@ -43,13 +43,11 @@ var playGame = function () {
 	if (userChoice == computerChoice) {
 		alert("Bruh. We tied.")
 		ties++; //ties += 1; ties= ties +1
-		
 	 } else if (
 	 	(userChoice === 'R' && computerChoice == 'S') || 
 		(userChoice === 'P' && computerChoice == 'R') || 
 		(userChoice === 'S' && computer.Choice == 'P') 
-	  )
-	{
+	  ) {
 		alert('Dang. You won.');
 		wins++;
 
