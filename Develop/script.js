@@ -46,13 +46,14 @@ var playGame = function () {
 	 } else if (
 	 	(userChoice === 'R' && computerChoice == 'S') || 
 		(userChoice === 'P' && computerChoice == 'R') || 
-		(userChoice === 'S' && computer.Choice == 'P') 
-	  ) {
+		(userChoice === 'S' && computerChoice == 'P') 
+
+	 ) {
 		alert('Dang. You won.');
 		wins++;
 
 	 } else {
-		alert('HA! I won');
+		alert('HA! I won.');
 		losses++;
 	 }
 
@@ -64,7 +65,7 @@ var playGame = function () {
 
 	// TODO: Use the alert() method to display current 'wins', 'losses', and 'ties'
 
-	alert("Wins: " + wins + '\n' + "losses: " + '\n' + 'Ties: ' + ties); //\n is new line
+	alert("Wins: " + wins + '\n' + "Losses: " + losses + '\n' + 'Ties: ' + ties); //\n is new line
 
 	// TODO: Use the confirm() method to ask user to play again and collect the response in a variable named 'playAgain'
 	var playAgain = confirm("Do you want to spar again?")
